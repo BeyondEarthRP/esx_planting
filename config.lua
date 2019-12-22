@@ -1,5 +1,5 @@
 Config = {}
-Config.Locale = "pl"
+Config.Locale = "en"
 --You can add here buttons like inventory menu button. When player click this button, then action will be cancel.
 Config.cancel_buttons = {289, 170, 168, 56}
 
@@ -8,9 +8,9 @@ options =
   ['seed_weed'] = {
         object = 'prop_weed_01',
         end_object = 'prop_weed_02',
-        fail_msg = 'Niestety, twoja roślinka zwiędła!',
-        success_msg = 'Gratulacje, dokonałeś zbiorów z roślinki!',
-        start_msg = 'Rozpoczynam uprawę rośliniki.',
+        fail_msg = 'Unfortunately, the plants did not survive.',
+        success_msg = 'Congratulations, you\'ve successfully grown and harvested the plants.',
+        start_msg = 'Plants have started growing.',
         success_item = 'weed',
         cops = 0,
         first_step = 2.35,
@@ -39,65 +39,65 @@ options =
         },
         questions = {
             {
-                title = 'Widzisz, że twoja roślinka kiełkuje, co robisz?',
+                title = 'You see that your seeds have started to sprout.  What would you like to do?',
                 steps = {
-                    {label = 'Podlewam Roślinę', value = 1},
-                    {label = 'Nawożę Roslinę', value = 2},
-                    {label = 'Czekam', value = 3}
+                    {label = 'Water the plants', value = 1},
+                    {label = 'Fertilize the plants', value = 2},
+                    {label = 'Wait and do nothing', value = 3}
                 },
                 correct = 1
             },
             {
-                title = 'Na twojej roślince pojawiły się zółte kropki, co robisz?',
+                title = 'You see yellow spots developing on your plants.  What would you like to do?',
                 steps = {
-                    {label = 'Podlewam Roślinę', value = 1},
-                    {label = 'Nawożę Roslinę', value = 2},
-                    {label = 'Czekam', value = 3}
+                    {label = 'Water the plants', value = 1},
+                    {label = 'Fertilize the plants', value = 2},
+                    {label = 'Wait and do nothing', value = 3}
                 },
                 correct = 2
             },
             {
-                title = 'Na liściach twojej rośliny pojawił się niebieski pył, co robisz?',
+                title = 'Some of your plants leaves are tinted blue.  What would you like to do?',
                 steps = {
-                    {label = 'Zrywam poszczególne liście', value = 1},
-                    {label = 'Posypuje liście nawozem', value = 2},
-                    {label = 'Czekam', value = 3}
+                    {label = 'Prune the colored leaves', value = 1},
+                    {label = 'Dust the leaves with fertilizer', value = 2},
+                    {label = 'Wait and do nothing', value = 3}
                 },
                 correct = 3
             },
             {
-                title = 'U twojej roślinki pojawiły się pierwsze topy, co robisz?',
+                title = 'The plants have developed their first tops.  What would you like to do?',
                 steps = {
-                    {label = 'Podlewam Roślinę', value = 1},
-                    {label = 'Zrywam je od razu', value = 2},
-                    {label = 'Nawożę roślinę', value = 3}
+                    {label = 'Water the plants', value = 1},
+                    {label = 'Snip the tops off', value = 2},
+                    {label = 'Fertilize the plants', value = 3}
                 },
                 correct = 1
             },
             {
-                title = 'Po podlaniu twojej roślinki, zaczeły się pojawiać dziwne liście, co robisz?',
+                title = 'After watering, the leaves look weird on the plant.  What would you like to do?',
                 steps = {
-                    {label = 'Podlewam Roślinę', value = 1},
-                    {label = 'Nawożę Roslinę', value = 2},
-                    {label = 'Czekam', value = 3}
+                    {label = 'Water the plants a bit more', value = 1},
+                    {label = 'Fertilize the plants', value = 2},
+                    {label = 'Wait and do nothing', value = 3}
                 },
                 correct = 2
             },
             {
-                title = 'Twoja roślinka jest już prawie gotowa do ścięcia, co robisz?',
+                title = 'The plants are almost ready to harvest.  What would you like to do?',
                 steps = {
-                    {label = 'Podlewam Roślinę', value = 1},
-                    {label = 'Nawożę Roslinę', value = 2},
-                    {label = 'Czekam', value = 3}
+                    {label = 'Water the plants', value = 1},
+                    {label = 'Fertilize the plants', value = 2},
+                    {label = 'Wait and do nothing', value = 3}
                 },
                 correct = 1
             },
             {
-                title = 'Twoja roślinka jest gotowa do zbiorów, co robisz?',
+                title = 'The plants are ready to harvest.  What would you like to do?',
                 steps = {
-                    {label = 'Zbierz przy użyciu nożyczek', value = 1, min = 5, max = 25},
-                    {label = 'Zbierz rękoma', value = 1, min = 10, max = 15},
-                    {label = 'Zetnij sekatorem', value = 1, min = 2, max = 40}
+                    {label = 'Use scissors to snip stems', value = 1, min = 5, max = 25},
+                    {label = 'Use barehands to snap stems', value = 1, min = 10, max = 15},
+                    {label = 'Use a knife to cut it down', value = 1, min = 2, max = 40}
                 },
                 correct = 1
             },
